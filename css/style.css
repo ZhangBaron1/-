@@ -1,0 +1,114 @@
+body,
+body * {
+    -webkit-text-size-adjust: 100%;
+}
+body,
+h1 {
+    margin: 0;
+    font-family: Helvetica;
+}
+a,
+input,
+button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+}
+a {
+    text-decoration: none;
+}
+.rows{
+    display: flex;
+    display: -webkit-box;
+    padding: 0.4rem 0.5rem 0;
+}
+.rows div{
+    width: 0px;
+    flex-grow: 1;
+    -webkit-box-flex:1;
+}
+.rows a{
+    color: #666;
+    font-size: 0.44rem;
+    text-align: center;
+    display: block;
+    line-height: 1.04rem;
+}
+.rows div a:before{
+    content: '';
+    display: block;
+    width: 1.74rem;
+    height: 1.73rem;
+    margin:0 auto;
+    background-image: url("../img/icon.png");
+    background-size: 9rem 3.6rem;
+}
+.rows:nth-of-type(1) div:nth-of-type(1) a:before{
+    background-position: 0 0 ;
+}
+.rows:nth-of-type(1) div:nth-of-type(2) a:before{
+    background-position: -1.8rem 0 ;
+}
+.rows:nth-of-type(1) div:nth-of-type(3) a:before{
+    background-position: -3.6rem 0 ;
+}
+.rows:nth-of-type(1) div:nth-of-type(4) a:before{
+    background-position: -5.4rem 0 ;
+}
+.rows:nth-of-type(1) div:nth-of-type(5) a:before{
+    background-position: -7.2rem 0 ;
+}
+.rows:nth-of-type(2) div:nth-of-type(1) a:before{
+    background-position:  0 -1.8rem;
+}
+.rows:nth-of-type(2) div:nth-of-type(2) a:before{
+    background-position:  -1.8rem -1.8rem;
+}
+.rows:nth-of-type(2) div:nth-of-type(3) a:before{
+    background-position: -3.6rem -1.8rem;
+}
+.rows:nth-of-type(2) div:nth-of-type(4) a:before{
+    background-position: -5.4rem -1.8rem;
+}
+.rows:nth-of-type(2) div:nth-of-type(5) a:before{
+    background-position: -7.2rem -1.8rem;
+}
+.wrap{
+    height: 4.68rem;
+    position: relative;
+}
+.list{
+    padding: 0;
+    margin: 0;
+    width:400%;
+    position: absolute;
+    top:0;
+    left:0;
+    list-style: none;
+}
+.list li{
+    float: left;
+    width:15rem;
+}
+.list img{
+    width:15rem;
+    display: block;
+}
+nav{
+    width:15rem;
+    height: 10px;
+    position: absolute;
+    bottom:5px;
+    z-index: 1;
+    text-align:center;
+}
+nav a{
+    width:15px;
+    height: 15px;
+    display: inline-block;
+    background: red;
+    border-radius:50%;
+    vertical-align:top;
+}
+nav a.active{
+    background:#fff;
+}
